@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         // Initialize preferences
         preferences = PreferenceManager
                 .getDefaultSharedPreferences(
-                        this);
+                        getApplicationContext());
     }
     public void getPref(View v) {
         String username =
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.preferences:
                 // Launch Preference activity
                 Intent i = new Intent(
-                        this,
+                        getApplicationContext(),
                         MisPreferencias.class);
                 startActivity(i);
                 // Some feedback to the user
