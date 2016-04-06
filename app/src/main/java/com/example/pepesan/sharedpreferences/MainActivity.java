@@ -32,14 +32,25 @@ public class MainActivity extends AppCompatActivity {
                 preferences.getString(
                         "password",
                         "n/a");
-        showPrefs(username, password);
+        Boolean sync =
+                preferences.getBoolean(
+                        "pref_sync",
+                        true);
+        String type =
+                preferences.getString(
+                        "pref_syncConnectionType",
+                        "n/a");
+        showPrefs(username, password,sync,type);
     }
     private void showPrefs(
-            String username, String password){
+            String username, String password,Boolean sync,String type){
         Toast.makeText(this,
                 "Input: "
-                        + username + " and password: "
-                        + password, Toast.LENGTH_LONG)
+                        + username + ", password: "
+                        + password + ", sync: "
+                        + sync.toString() + " type: "
+                        + type
+                        , Toast.LENGTH_LONG)
                 .show();
 
     }

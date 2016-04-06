@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">SharedPreferences</string>
+    <string name="pref_sync">Sincronizar</string>
+    <string name="pref_sync_summ">Sincronizar los datos</string>
+    <string name="pref_syncConnectionType">Tipo de Conexión</string>
+    <string name="pref_syncConnectionTypes_default">HTTP</string>
+    <string-array name="pref_syncConnectionTypes_entries">
+        <item>HTTP</item>
+        <item>HTTPS</item>
+        <item>FTP</item>
+    </string-array>
+    <string-array name="pref_syncConnectionTypes_values">
+        <item>HTTP</item>
+        <item>HTTPS</item>
+        <item>FTP</item>
+    </string-array>
 </resources>
