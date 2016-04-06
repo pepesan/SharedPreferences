@@ -5,12 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MisPreferencias
-        extends PreferenceActivity {
+        extends AppCompatActivity {
     @Override
     public void onCreate(
             Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(
-                R.xml.preferences);
+
+        // Display the fragment as the main content.
+        getFragmentManager().beginTransaction()
+                .replace(android.R.id.content, new SettingsFragment())
+                .commit();
     }
 }
