@@ -14,4 +14,5 @@
         <item>HTTPS</item>
         <item>FTP</item>
     </string-array>
+    <string name="other_settings">Otras configuraciones</string>
 </resources>

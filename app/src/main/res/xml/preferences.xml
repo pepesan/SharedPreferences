@@ -10,6 +10,11 @@
             android:key="password" 
             android:title="Password"/>
     </PreferenceCategory>
+    <PreferenceScreen
+        android:key="button_voicemail_setting_key"
+        android:title="@string/other_settings"
+        android:persistent="true"
+        >
     <PreferenceCategory>
         <CheckBoxPreference
             android:key="pref_sync"
@@ -25,6 +30,6 @@
             android:entryValues="@array/pref_syncConnectionTypes_values"
             android:defaultValue="@string/pref_syncConnectionTypes_default" />
     </PreferenceCategory>
-    
+    </PreferenceScreen>
 
 </PreferenceScreen>
