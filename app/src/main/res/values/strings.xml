@@ -15,4 +15,5 @@
         <item>FTP</item>
     </string-array>
     <string name="other_settings">Otras configuraciones</string>
+    <string name="prefs_web_page">Abrir Web URL</string>
 </resources>
