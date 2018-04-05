@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
         showPrefs(username, password,sync,type);
     }
     private void showPrefs(
-            String username, String password,Boolean sync,String type){
+            String username, String password,Boolean sync,
+            String type){
         Toast.makeText(this,
                 "Input: "
                         + username + ", password: "
